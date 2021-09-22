@@ -2,13 +2,13 @@
 
 We designed this homework assignement as part of the hiring evaluation process at Zego/Mobile Doorman. Please send any questions to mlins@gozego.com
 
-You can use whichever ruby framework/tools/gems (or no framework/tools/gems) that you feel comfortable with. Please design this in a way that you would for something that would go live into production (tests, docs, etc).
+You can use whichever language/framework/tools that you feel comfortable with. Please design this in a way that you would for something that would go live into production (tests, docs, etc).
 
 Create a *private* repository in github to host your code and give colloborater access to: https://github.com/mlins and https://github.com/seichewarning
 
 # Goal
 
-Write a ruby script to:
+Write an application to:
 * make a GET request to https://test-users-2020.herokuapp.com/api/users
 * send an Authorization Token with the value 'abc123' in the request headers
 * parse the user json data returned, ignore invalid data, collate duplicate user data then write out transformed data to a json file
