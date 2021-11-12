@@ -27,7 +27,7 @@ The data is an array of users where each user is similar to the following snippe
   }
 }
 ```
-* In order for a user to be considered valid it must contain a `firstName`, `lastName` and either a valid `email` and or a valid `phone`. If not valid, ignore.
+* In order for a user to be considered valid it must contain a `firstName`, `lastName` and either a valid `email` or a valid `phone`. If it is not valid omit the record. For example, if a record contains a valid `firstName`, `lastName` and `email`, but the `phone` is invalid, then the record is still considered valid.
 
 * A valid user is unique by its `firstName` and `lastName`.
 
@@ -36,6 +36,7 @@ The data is an array of users where each user is similar to the following snippe
 # Transform
 * Create a new list of the valid unique users sorted alphabetically by `lastName`.
 * Format the phone numbers to be `(nnn) nnn-nnnn`.
+* If `email` or `phone` is invalid, omit it from the record.
 * If  `phone` is present move it up a level.
 * Collate the data.  For example if the following was found..
 ```  
